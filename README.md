@@ -1,4 +1,4 @@
-# FoodExpress
+# FoodExpress - A food ordering web Application.
 
 ## Tech Stack
 
