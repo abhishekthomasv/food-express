@@ -23,7 +23,7 @@ const RestaurantMenu = () => {
     avgRatingString,
     totalRatingsString,
     feeDetails,
-  } = resInfo?.cards[0]?.card?.card?.info;
+  } = resInfo?.cards[2]?.card?.card?.info;
 
   const categories =
     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
