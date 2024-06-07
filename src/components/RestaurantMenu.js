@@ -26,7 +26,7 @@ const RestaurantMenu = () => {
   } = resInfo?.cards[2]?.card?.card?.info;
 
   const categories =
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
+    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
       (cateogry) =>
         cateogry?.card?.card["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
@@ -58,7 +58,7 @@ const RestaurantMenu = () => {
       </div>
       <div className="ml-[25rem] mt-6 ">
         <MdOutlineDeliveryDining className="inline" size={28} color="grey" />
-        <h4 className="font-light inline">{feeDetails.message}</h4>
+        <h4 className="bold inline">{feeDetails.message}</h4>
       </div>
       <div>
         {categories.map((category, index) => {
